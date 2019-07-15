@@ -1,3 +1,4 @@
+// 별찍기 - 10 백준 2447 다시 풀어보기
 #include <cstdio>
 #include <cstring>
 using namespace std;
