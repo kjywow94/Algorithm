@@ -2,26 +2,34 @@
 #include <cstdio>
 using namespace std;
 
-int T;
-int arr[80003] = { 0, };
+int arr[100003] = { 0, };
 
 int main() {
-	scanf("%d", &T);
+	int num = 0;
 
-	for (int i = 0; i < T; i++) {
-		scanf("%d", &arr[i]);
-	}
-
-	for (int i = 0; i < T; i++) {
-		int sum = 0;
-		for (int j = 1; j <= arr[i]; j++) {
-			if (j % 3 == 0 || j % 7 == 0) {
-				sum += j;
+	for (int i = 0; i < 100003; i++) {
+		if (i % 3 == 0 && i % 7 == 0) {
+			num += i;
+		}
+		else {
+			if (i % 3 == 0) {
+				num += i;
 			}
-			else if (j % 3 == 0 && j % 7 == 0) {
-				sum += j;
+			else if (i % 7 == 0) {
+				num += i;
 			}
 		}
-		printf("%d\n", sum);
+		arr[i] = num;
 	}
+
+	int t;
+	scanf("%d", &t);
+	
+	for (int i = 0; i < t; i++) {
+		int n;
+		scanf("%d", &n);
+
+		printf("%d\n", arr[n]);
+	}
+
 }
