@@ -3,7 +3,7 @@
 using namespace std;
 
 int n, m, l;
-int arr[1003];
+int map[1003];
 vector<int> v;
 int mcnt = 0;
 int cnt = 0;

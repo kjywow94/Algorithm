@@ -4,17 +4,17 @@
 using namespace std;
 
 int N;
-int arr[500003];
+int map[500003];
 
 int main() {
 	scanf("%d", &N);
 	
 
 	for (int i = 0; i < N; i++) {
-		scanf("%d", &arr[i]);
+		scanf("%d", &map[i]);
 	}
 
-	sort(arr, arr + N);
+	sort(map, map + N);
 
-	printf("%d\n", arr[N-1]);
+	printf("%d\n", map[N-1]);
 }

@@ -3,8 +3,8 @@
 using namespace std;
 
 int num[103], n;
-int tmax;
-int tmin;
+int tmax = -987654321;
+int tmin = 987654321;
 int p, m, x, d;
 
 void Total(int cnt, int plus, int sub, int mult, int div, int total) {

@@ -2,7 +2,7 @@
 #include <cstdio>
 using namespace std;
 
-int arr[100003] = { 0, };
+int map[100003] = { 0, };
 
 int main() {
 	int num = 0;
@@ -19,7 +19,7 @@ int main() {
 				num += i;
 			}
 		}
-		arr[i] = num;
+		map[i] = num;
 	}
 
 	int t;
@@ -29,7 +29,7 @@ int main() {
 		int n;
 		scanf("%d", &n);
 
-		printf("%d\n", arr[n]);
+		printf("%d\n", map[n]);
 	}
 
 }

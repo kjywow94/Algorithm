@@ -16,7 +16,6 @@ int main() {
 		// 비어있을 때까지
 		temp = q.front();
 		q.pop();
-
 		int next = q.front();
 		q.pop();
 		q.push(next);

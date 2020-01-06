@@ -4,13 +4,13 @@
 using namespace std;
 
 int N, M;
-int arr[10];
+int map[10];
 bool chk[10] = { false, };
 
 void dfs(int cnt) {
 	if (cnt == M) {
 		for (int i = 0; i < M; i++) {
-			printf("%d", arr[i]);
+			printf("%d", map[i]);
 			if (i == N - 1) {
 
 			}
@@ -24,7 +24,7 @@ void dfs(int cnt) {
 		for (int i = 1; i <= N; i++) {
 			if (chk[i] == false) {
 				chk[i] = true;
-				arr[cnt] = i;
+				map[cnt] = i;
 				dfs(cnt + 1);
 				chk[i] = false;
 			}
