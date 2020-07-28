@@ -25,8 +25,8 @@ public class Solution_6958 {
 				}
 			}
 
-			int fp = 0;
 			int ft = -987654321;
+			int fcnt = 0;
 			for (int i = 0; i < n; i++) {
 				int cnt = 0;
 				for (int j = 0; j < m; j++) {
@@ -34,18 +34,17 @@ public class Solution_6958 {
 						cnt++;
 					}
 				}
-				System.out.println("ft : " + ft);
-				System.out.println("cnt : " + cnt);
+		
 				if(ft < cnt){
 					ft = Math.max(ft, cnt);
-					fp = i;
+					fcnt = 1;
 				}
 				else if(ft == cnt){
-					fp = i;
+					fcnt++;
 				}
 			}
 			
-			System.out.println((fp+1)+ " " + ft);
+			System.out.println("#"+tc+" "+fcnt+ " " + ft);
 			
 		}
 	}
